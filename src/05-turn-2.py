@@ -12,7 +12,13 @@ import time
 motorB = Motor(Port.B)
 motorC = Motor(Port.C)
 
-# 300의 속도로 {DEGREE}도 회전 (시계방향)
+# 300의 속도로 {DEGREE}도 회전 (반시계방향)
 DEGREE = 360 * 2  # test 상 360도(1바퀴)
+motorB.run_angle(300, -DEGREE, Stop.BRAKE, False)
+motorC.run_angle(300, DEGREE, Stop.BRAKE, True)
+
+time.sleep(2)  # 2초간 정지
+
+# 시계 방향으로 1바퀴 회전 (시계방향)
 motorB.run_angle(300, DEGREE, Stop.BRAKE, False)
 motorC.run_angle(300, -DEGREE, Stop.BRAKE, True)

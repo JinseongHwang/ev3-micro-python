@@ -8,7 +8,7 @@
 			"name": "Download and Run",
 			"type": "ev3devBrowser",
 			"request": "launch",
-			"program": "/home/robot/${workspaceRootFolderName}/src/04-turn-1.py",
+			"program": "/home/robot/${workspaceRootFolderName}/src/06-p50.py",
 			"interactiveTerminal": false
 		}
 	]
