@@ -23,6 +23,6 @@ while True:
         motorB.run(300)
         motorC.run(300)
     else:
-        # 물체와의 거리가 15cm보다 짧다면 정지
+        # 물체와의 거리가 10cm보다 짧다면 정지
         motorB.stop(Stop.BRAKE)
         motorC.stop(Stop.BRAKE)
